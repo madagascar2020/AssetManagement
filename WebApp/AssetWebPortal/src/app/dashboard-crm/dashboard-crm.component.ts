@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { AssetdataserviceService } from '../Shared/Services/assetdataservice.service';
 import { AssetDataResponse } from '../Shared/Models/asset-data-response';
+import { SearchFilter } from '../Shared/Models/search-filter';
 
 @Component({
     selector: 'app-dashboard-crm',
@@ -9,7 +10,7 @@ import { AssetDataResponse } from '../Shared/Models/asset-data-response';
 })
 
 export class DashboardCrmComponent implements OnInit {
-   
+    filter:SearchFilter=new SearchFilter();  
 assetsData : AssetDataResponse[] = []
 
     public dashCard = [
@@ -35,7 +36,7 @@ assetsData : AssetDataResponse[] = []
     }
 
     GetAssets(){
-        this._AssetService.GetAssets().subscribe(s =>{
+        this._AssetService.GetAssets(this.filter).subscribe(s =>{
             this.assetsData = s;
         });
     }

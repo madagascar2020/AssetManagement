@@ -5,6 +5,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="AssetWebApp\**" />
+    <Content Remove="AssetWebApp\**" />
+    <EmbeddedResource Remove="AssetWebApp\**" />
+    <None Remove="AssetWebApp\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Include="AssetWebPortal\.firebase\hosting.ZGlzdA.cache" />
     <None Include="AssetWebPortal\.github\workflows\firebase-hosting-merge.yml" />
     <None Include="AssetWebPortal\.github\workflows\firebase-hosting-pull-request.yml" />
