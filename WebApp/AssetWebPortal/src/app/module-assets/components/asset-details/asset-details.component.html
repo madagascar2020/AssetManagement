@@ -1,0 +1,42 @@
+<div fxLayout="column" class="components-container-gt-xs"  [ngClass.xs]="'components-container-xs'"  fxLayoutGap="20px">
+    <form  #assetData="ngForm" (ngSubmit)="Submit()">
+        <div fxLayout="row col-12">
+            <mat-form-field  class="example-form-field">
+                <input matInput placeholder="Code" 
+                #code="ngModel" [(ngModel)]="model.code" required>
+            </mat-form-field>
+            <mat-form-field>
+                <input matInput placeholder="Description"  
+               #description="ngModel"  [(ngModel)]="model.description" >
+            </mat-form-field>
+            <mat-form-field>
+                <input matInput type="number" placeholder="Quantity" 
+              #quantity="ngModel"   [(ngModel)]="model.quantity" >
+            </mat-form-field>
+        </div>
+        <div fxLayout="row">
+            <table class="example-full-width" cellspacing="0">
+                <tr>
+                    <td>
+                        <mat-form-field class="example-full-width">
+                            <input matInput placeholder="Value" type="number"
+                            #value="ngModel"  [(ngModel)]="model.value">
+                        </mat-form-field>
+                    </td>
+                    <td>
+                        <mat-form-field class="example-full-width">
+                            <input matInput placeholder="State">
+                        </mat-form-field>
+                    </td>
+                    <td>
+                        <mat-form-field class="example-full-width">
+                            <input matInput #postalCode maxlength="5" placeholder="Postal Code" value="94043">
+                            <mat-hint align="end"></mat-hint>
+                        </mat-form-field>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </form>
+</div>
+

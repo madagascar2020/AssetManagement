@@ -1,0 +1,75 @@
+.table-header {
+	background-color: cadetblue;
+	color: white;
+	padding: 0 5px;
+}
+.table-container {
+	padding: 5px 15px 15px 15px;
+}
+.table-component-holder {
+	border: 1px solid cadetblue;
+	background-color: white;
+}
+
+
+::ng-deep .mat-toolbar.mat-primary {
+	background: cadetblue !important;
+	color: #fff;
+  }
+  
+
+  ::ng-deep  .mat-button.mat-primary {
+	background-color: cadetblue;
+	color: white;
+	padding: 0 5px;
+}
+::ng-deep  .mat-button.mat-accent {
+	background-color: gray;
+	color: white;
+	padding: 0 5px;
+}
+
+
+.card {
+	border-radius: 7px !important ;
+	.card-title {
+	  border-top-right-radius: 7px !important;
+	  border-top-left-radius: 7px !important;
+	}
+  }
+
+cdk-virtual-scroll-viewport {
+    height: 64vh;
+    min-height: 64vh;
+    overflow-x:hidden;
+  }
+
+.viewport .cdk-virtual-scroll-content-wrapper {
+	display: flex;
+	flex-direction: row;
+  }
+
+// .cdk-virtual-scroll-content-wrapper {
+// 	position: relative !important; 
+//    top: 0;
+//    left: 0;
+// 	contain:initial !important;
+//  }
+.list-container{
+	max-width: 82vw;
+	overflow-x: scroll;
+  }
+
+
+
+
+
+// .example-viewport {
+// 	height: 200px;
+// 	width: 200px;
+// 	border: 1px solid black;
+//   }
+  
+//   .example-item {
+// 	height: 50px;
+//   }

@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="AssetWebPortal\.firebase\hosting.ZGlzdA.cache" />
+    <None Include="AssetWebPortal\.github\workflows\firebase-hosting-merge.yml" />
+    <None Include="AssetWebPortal\.github\workflows\firebase-hosting-pull-request.yml" />
+  </ItemGroup>
+
+</Project>
